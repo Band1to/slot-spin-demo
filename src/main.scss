@@ -1,0 +1,78 @@
+
+$icon-font-path: "../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+body {
+	padding: 20px;
+	background: url("images/blue.jpg") repeat;
+	text-align: center;
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align: center;
+}
+
+.col-centered {
+    display: inline-block;
+    float: none;
+    /* reset the text-align */
+    text-align: center;
+    /* inline-block space fix */
+    margin-right: -4px;
+}
+
+.main-container {
+	margin-top: 50px;
+
+	.slots-wrapper {
+		border: 1px solid #ffffff;
+		border-radius: 10px;
+		width: 260px;
+		margin: auto;
+
+		.slot {
+			background:url('images/reel_normal.png') repeat-y;
+			width: 86px;
+			height: 70px;
+			float: left;
+			background-position: 0 4px;
+		}
+
+		.motion {
+			background: url('images/reel_blur.png') repeat-y;
+		}
+
+	}
+
+	#slots-result {
+		padding: 20px;
+		font-size: 40px;
+		font-weight: bold;
+		text-align: center;
+		color: #ffffff;
+	}
+
+	.credits {
+		font-size: 15px;
+		margin-top: 20px;
+		color: #ffffff;
+
+		a {
+			color: #ffffff;
+		}
+
+		.author {}
+
+		.browsers {
+			font-style: italic;
+			font-size: 14px;
+			margin-top: 4px;
+		}
+	}
+
+	.clear {
+		clear: both;
+	}
+
+}
