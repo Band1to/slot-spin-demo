@@ -1,10 +1,11 @@
 
 'use strict';
 
-var webpack = require("webpack");
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var path = require('path');
-var nodemodules_dir = path.resolve(__dirname, '/node_modules');
+const webpack = require("webpack");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const path = require('path');
+const nodemodules_dir = path.resolve(__dirname, '/node_modules');
 
 module.exports = {
   entry: './src/index.js',
@@ -54,7 +55,8 @@ module.exports = {
       new webpack.ProvidePlugin({
         $: 'jquery',
         jQuery: 'jquery'
-      })
+      }),
+      new UglifyJSPlugin()
   ],
   devServer: {
     port: 3000,
