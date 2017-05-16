@@ -25,6 +25,12 @@ body {
 .main-container {
 	margin-top: 50px;
 
+	header {
+		h1 {
+			color: #ffffff;
+		}
+	}
+
 	.slots-wrapper {
 		border: 1px solid #ffffff;
 		border-radius: 10px;
